@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <style>
+        * {margin: 0; padding: 0;}
+        ul, ol, li {list-style: none;}
+        a {text-decoration: none; color: #eee;}
+
+        header {width: 100%; height: 120px; display: block; background-color:black;}
+        .header_wrap {width: 100%; height: 120px; position: absolute; top: 0; left: 0; z-index: 100; border-top: 5px solid red; display: flex;}
+        .container {max-width: 1200px; margin-right: auto; margin-left: auto; padding-right: 15px; padding-left: 15px; width: 100%;}
+        .header_wrap_menu {width: 100%; height: 100%; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;}
+        .menu_wrap {height: 100%;}
+        .menu {display: flex; align-items: center; justify-content: center; height: 100%;}
+        .main_menu {display: flex; align-items: center; justify-content: center;}
+        .main_menu>li>a {font-size: 14pt; font-weight: 'NotoSans'; font-weight: 400; padding: 15px;}
+
+        .logo {height: 50px;}
+        .logo>a {display: block; height: 100%;}
+        .logo>a>img {width: auto; max-height: 100%; vertical-align: middle;}
+
+        .social {display: flex; justify-content: flex-start; align-items: center;}
+        .social a {font-size: 15pt; color: #fff;}
+        .social i {margin-left: 20px;}
+
+        #slide {width: 100%; height: 900px;}
+        #slide img {width: 100%; height: 900px;}
+
+        #welcome {width: 100%; height: 650px; background-color: #eee}
+        .welcome_row {display: flex; flex-direction: column; flex-wrap: nowrap; align-items: center; align-content: center;}
+        .welcome_col_img {position: relative; width: 100%; min-height: 1px; padding-right: 15px; padding-left: 15px;}
+        .welcome_wrap_img {width: 100%; height: 100%; display: flex; justify-content: center;}
+        .welcome_tit {position: absolute; top: 280px; left: 480px; color: aqua; font-size: 15pt;}
+        .welcome_wrap_img img {width: 1000px; height: 300px; padding-top: 30px;}
+
+        #intro {width: 100%; height: 1000px; background-color: brown;}
+        #ourmenu {width: 100%; height: 1000px; background-color: burlywood;}
+        #event {width: 100%; height: 800px; background-color: cadetblue;}
+        #book_ev {width: 100%; height: 700px; background-color: chartreuse;}
+        #review {width: 100%; height: 500px; background-color: chocolate;}
+        #video {width: 100%; height: 600px; background-color: coral;}
+        footer {width: 100%; height: 500px; background-color: black;}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header_wrap">
+            <div class="container">
+                <div class="header_wrap_menu">
+                    <div class="logo">
+                       <a href="#"><img src="img/starwars_logo.png" alt=""></a>
+                    </div>
+                    <div class="menu_wrap">
+                        <nav class="menu">
+                            <ul class="main_menu">
+                                <li>
+                                    <a href="#">HOME</a>
+                                </li>
+                                <li>
+                                    <a href="#">WHO</a>
+                                </li>
+                                <li>
+                                    <a href="#">WHEN</a>
+                                </li>
+                                <li>
+                                    <a href="#">WHERE</a>
+                                </li>
+                                <li>
+                                    <a href="#">WHAT</a>
+                                </li>
+                                <li>
+                                    <a href="#">HOW</a>
+                                </li>
+                                <li>
+                                    <a href="#">WHY</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="social">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="slide">
+        <div class="slide_wrap">
+            <img src="img/star_slide.jpg">
+        </div>
+    </section>
+    <section id="welcome">
+        <div class="container">
+            <div class="welcome_row">
+                <div class="welcome_col_img">
+                    <div class="welcome_wrap_img">
+                        <img src="img/starwars_welcome.jpg">
+                        <span class="welcome_tit">오래전 멀고 먼 은하계에서...</span>
+                    </div>
+                </div>
+                <div class="welcome_col_text">
+                    <h3>미국을 대표하는 스페이스 오페라에 어서오세요.</h3>
+                </div>
+             </div>
+        </div>
+    </section>
+    <section id="intro"></section>
+    <section id="ourmenu"></section>
+    <section id="event"></section>
+    <section id="book_ev"></section>
+    <section id="review"></section>
+    <section id="video"></section>
+    <footer></footer>
+</body>
+</html>
