@@ -36,9 +36,29 @@
         .welcome_col_img {position: relative; width: 100%; min-height: 1px; padding-right: 15px; padding-left: 15px;}
         .welcome_wrap_img {width: 100%; height: 100%; display: flex; justify-content: center;}
         .welcome_tit {position: absolute; top: 280px; left: 480px; color: aqua; font-size: 15pt;}
-        .welcome_wrap_img img {width: 1000px; height: 300px; padding-top: 30px;}
+        .welcome_wrap_img img {width: 800px; height: 300px; padding-top: 50px;}
+        .welcome_col_text {display: flex; width: 1000px; height: 300px; flex-direction: column; flex-wrap: nowrap; align-items: center; justify-content: center;}
+        .welcome_col_text h3 {font-family: Poppins; font-weight: 700; font-size: 40px; line-height: 1.2; color: #222222;}
+        .welcome_col_text span {font-family: Courgette; font-size: 30px; line-height: 1.2;color: #d61c22; }
 
-        #intro {width: 100%; height: 1000px; background-color: brown;}
+
+        #intro {width: 100%; height: 1000px;}
+        .header_intro {background-image: url(img/starwars_tit.jpg); width: 100%; height: 400px; background-attachment: fixed; 
+            background-repeat: no-repeat; background-size: cover; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+        .header_intro span {font-family: Courgette; font-size: 30px; color: #d61c22; line-height: 1.2;}
+        .header_intro h3 {font-family: Poppins; font-weight: 700; font-size: 50px; line-height: 1.2; color: white; color: white; word-spacing: 6px;  }
+        .header_content {width: 100%; height: 500px; padding-top: 55px;}
+        .header_row {width: 100%; height: 100%; display: flex;}
+        .header_col {max-width: 33.3%; width: 100%; height: 300px; padding-top: 30px;  }
+        .intro_img {width: 80%; height: 300px; display: block; background-size: cover; margin: 0 auto;}
+        .intro_img img {background-size: cover; width: 300px; height: 300px;}
+        .intro_text {width: 80%; height: 350px; padding-top: 35px; margin: 0 auto; text-align: center;}
+        .intro_text h4 {font-family: Poppins; font-weight: 500; font-size: 22px; color: #333333; letter-spacing: 3px; color: #d61c22;}
+        .intro_text p {padding-bottom: 35px;}
+        .intro_a {font-family: Montserrat; font-weight: 400; font-size: 16px; color: #222222; letter-spacing: 1px;}
+
+
+        
         #ourmenu {width: 100%; height: 1000px; background-color: burlywood;}
         #event {width: 100%; height: 800px; background-color: cadetblue;}
         #book_ev {width: 100%; height: 700px; background-color: chartreuse;}
@@ -106,12 +126,56 @@
                     </div>
                 </div>
                 <div class="welcome_col_text">
-                    <h3>미국을 대표하는 스페이스 오페라에 어서오세요.</h3>
+                    <span>STARWARS</span>
+                    <h3>미국을 대표하는 스페이스 오페라에 어서오세요.</h3><br/>
+                    <p>'스타워즈(Star Wars)'라는 원제의 첫 작으로 시작된 조지 루카스 감독의 스페이스 오페라 SF 액션 어드벤처 장르의 시리즈. <br/>
+                        프랜차이즈의 중심이 되는 메인 시리즈를 스카이워커 사가라 칭합니다. 영화 시리즈로 출발해 현재는 코믹스, 소설, TV 시리즈, 게임 등을 망라하는 거대한 프랜차이즈로 거듭났습니다..</p>
                 </div>
              </div>
         </div>
     </section>
-    <section id="intro"></section>
+    <section id="intro">
+        <div class="header_intro">
+            <span>Discover</span>
+            <h3>STARWARS 시리즈</h3>
+        </div>
+        <div class="header_content">
+            <div class="container">
+                <div class="header_row">
+                    <div class="header_col">
+                        <div class="intro_img">
+                            <img src="img/starwars_movie.jfif">
+                        </div>
+                        <div class="intro_text">
+                            <a href="#"><h4>실사영화 시리즈</h4></a>
+                            <p>SF명작 스타워즈 스카이워커 사가의 이야기</p>
+                            <a href="#" class="intro_a">더보기</a>
+                        </div>
+                    </div> 
+                    <div class="header_col">
+                        <div class="intro_img">
+                            <img src="img/starwars_TV.jfif">
+                        </div>
+                        <div class="intro_text">
+                            <a href="#"><h4>드라마 시리즈</h4></a>
+                            <p>디즈니+에서 방영중인 스타워즈 시리즈</p>
+                            <a href="#" class="intro_a">더보기</a>
+                        </div>
+                    </div>
+                    <div class="header_col">
+                        <div class="intro_img">
+                            <img src="img/starwars_clone.jfif">
+                        </div>
+                        <div class="intro_text">
+                            <a href="#"><h4>애니메이션 시리즈</h4></a>
+                            <p>더욱 깊어지는 스타워즈의 세계관</p>
+                            <a href="#" class="intro_a">더보기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section id="ourmenu"></section>
     <section id="event"></section>
     <section id="book_ev"></section>
