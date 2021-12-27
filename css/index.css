@@ -53,7 +53,9 @@ background-repeat: no-repeat; background-size: cover; display: flex; flex-direct
 .tit_ourpic span {font-family: Courgette; font-size: 30px; color: #d61c22; line-height: 1.2;}
 .tit_ourpic h3 {font-family: Poppins; font-weight: 700; font-size: 50px; line-height: 1.2; color: #eee; word-spacing: 6px;  }
 .tit_row {display: flex; flex-wrap: wrap; margin-right: -15px; margin-left: -15px;}
-.tit_col {flex: 0 0 50%; max-width: 50%;}
+.tit_col1 {flex: 0 0 66%; max-width: 66%%;}
+.tit_col2 {flex: 0 0 33%; max-width: 33%;}
+.pic_col {flex: 0 0 50%; max-width: 50%; }
 .item_pic {display: block; overflow: hidden;}
 .item_pic img {width: 100%; vertical-align: middle; bborder-style: none;}
 
