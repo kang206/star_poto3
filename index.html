@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/reset.css"
+    <link rel="stylesheet" href="css/reset.css">
 </head>
 <body>
     <header>
@@ -167,53 +167,44 @@
         </div>
     </section>
     <section id="event">
-        <img src="	https://preview.colorlib.com/theme/pato/images/xbg-event-02.jpg.pagespeed.ic.0ixwHugKHm.webp" class="envet_img">
-        <div class="container">
-            <div class="tit_ourpic">
-                <span class="tit2">EVENT</span>
-                <h3 class="tit3">스타워즈 이벤트</h3>
-            </div>
-            <div id="slidewrap">
-                <ul class="slide">
-                       <li><img src="img/starwars_tit.jpg" alt="slide image"></li>
-                        <li><img src="img/starwars_tit.jpg" alt="slide image"></li>
-                        <li><img src="img/starwars_tit.jpg"></li>
-                </ul>h
-                <span class="prev">&lt;</span>
-                <span class="next">&gt;</span>    
+        <div class="wrap_slick">
+            <div class="slick2_slide">
+                <div class="slick_list">
+                    <div class="slick_track">
+                        <div class="item_slick1">
+                            <div class="wrap_slide">
+                                <div class="container">
+                                    <div class="event_tit">
+                                        <span class="ev_tit">event</span>
+                                        <h3 class="ev_tit1">이벤트</h3>
+                                    </div>
+                                    <div class="main_event">
+                                        <a href="#" class="wrap_eve_pic">
+                                        <div class="eve_pic_side">
+                                            <span class="eve_side_text">
+                                                스타워즈 새로운 시리즈 이벤트
+                                            </span>
+                                        </div>
+                                        </a>
+                                        <div class="wrap_eve_text">
+                                            <h4 class="h4_title">북 오브 보바펫</h4> 
+                                            <p>디즈니+에서 방영되는 만달로리안 첫번재 스핀오프 드라마</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="item_slick2">
+
+                        </div>
+                        <div class="item_slick3">
+
+                        </div>
+                    </div>
                 </div>
-                
-                <script>
-                function prev(){
-                $('.slide li:last').prependTo('.slide');
-                $('.slide').css('margin-left',-1000); // $('.slide').css({marginLeft:-1000}); 
-                $('.slide').stop().animate({marginLeft:0},800);      
-                }
-                function next(){
-                $('.slide').stop().animate({marginLeft:-1000}, function(){   
-                $('.slide li:first').appendTo('.slide');          
-                $('.slide').css({marginLeft:0}); 
-                });
-                }
-                function slide(){
-                $('.slide').stop().animate({marginLeft:-1000}, function(){
-                $('.slide li:first').appendTo('.slide');
-                $('.slide').css({marginLeft:0});
-                });
-                }
-
-                setInterval(slide, 3000);
-
-                $('.prev').click(function(){
-
-                prev(); 
-                });
-                $('.next').click(function(){
-                next();
-                });
-                </script>
-                
-             </div>
+            </div>
+        </div>
     </section>
     <section id="book_ev"></section>
     <section id="review"></section>
