@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/reset.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
     <header>
@@ -126,7 +127,7 @@
             </div>
             <div class="tit_row">
                 <div class="tit_col1">
-                    <div class="tit_row1">
+                    <div class="tit_row">
                         <div class="pic_col1">
                             <div class="item_pic">
                                 <img src="img/starwars_Gpic2.jpg" alt="">
@@ -145,7 +146,7 @@
                     </div>
                 </div>
                 <div class="tit_col2">
-                    <div class="tit_row2">
+                    <div class="tit_row">
                         <div class="pic_col4">
                             <div class="item_pic">
                                 <img src="img/starwars_Gpic4.jpg" alt="">
@@ -171,6 +172,8 @@
             <div class="slick2_slide">
                 <div class="slick_list">
                     <div class="slick_track">
+
+                    <div class="item_slide">
                         <div class="item_slick1">
                             <div class="wrap_slide">
                                 <div class="container">
@@ -189,20 +192,75 @@
                                         <div class="wrap_eve_text">
                                             <h4 class="h4_title">북 오브 보바펫</h4> 
                                             <p>디즈니+에서 방영되는 만달로리안 첫번재 스핀오프 드라마</p>
+                                            <a href="#">자세히 보기</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                
+                    </div>
+
+                    <div class="item_slide">
                         <div class="item_slick2">
-
-                        </div>
-                        <div class="item_slick3">
-
+                            <div class="wrap_slide">
+                                <div class="container">
+                                    <div class="event_tit">
+                                        <span class="ev_tit">event</span>
+                                        <h3 class="ev_tit1">이벤트</h3>
+                                    </div>
+                                    <div class="main_event">
+                                        <a href="#" class="wrap_eve_pic">
+                                        <div class="eve_pic_side">
+                                            <span class="eve_side_text">
+                                                스타워즈 새로운 시리즈 이벤트
+                                            </span>
+                                        </div>
+                                        </a>
+                                        <div class="wrap_eve_text">
+                                            <h4 class="h4_title">북 오브 보바펫</h4> 
+                                            <p>디즈니+에서 방영되는 만달로리안 첫번재 스핀오프 드라마</p>
+                                            <a href="#">자세히 보기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+
+                    <div class="item_slide">
+                        <div class="item_slick3">
+                            <div class="wrap_slide">
+                                <div class="container">
+                                    <div class="event_tit">
+                                        <span class="ev_tit">event</span>
+                                        <h3 class="ev_tit1">이벤트</h3>
+                                    </div>
+                                    <div class="main_event">
+                                        <a href="#" class="wrap_eve_pic">
+                                        <div class="eve_pic_side">
+                                            <span class="eve_side_text">
+                                                스타워즈 새로운 시리즈 이벤트
+                                            </span>
+                                        </div>
+                                        </a>
+                                        <div class="wrap_eve_text">
+                                            <h4 class="h4_title">북 오브 보바펫</h4> 
+                                            <p>디즈니+에서 방영되는 만달로리안 첫번재 스핀오프 드라마</p>
+                                            <a href="#">자세히 보기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                   
                 </div>
+                <div class="slide_btn">
+                    <span class="prev">&lt;</span>
+                    <span class="next">&gt;</span>
+                    </div>
+            </div>
             </div>
         </div>
     </section>
@@ -210,5 +268,34 @@
     <section id="review"></section>
     <section id="video"></section>
     <footer></footer>
+
+    <script>
+         var w=window.innerWidth;  
+        function prev() {
+            $('.slick_track .item_slide:last').prependTo('.slick_track');
+            $('.slick_track').css('margin-left', -w);
+            $('.slick_track').stop().animate({ marginLeft: 0 }, 800);
+        }
+        function next() {
+            $('.slick_track').stop().animate({ 'marginLeft': -w }, function () {
+                $('.slick_track .item_slide:first').appendTo('.slick_track');
+                $('.slick_track').css({ marginLeft: 0 }, 800);
+            });
+        }
+        function slide() {
+            $('.slick_track').stop().animate({ marginLeft: -w }, function () {
+                $('.slick_track .item_slide:first').appendTo('.slick_track');
+                $('.slick_track').css({ marginLeft: 0 });
+            });
+        }
+        setInterval(slide, 10000);
+        $('.prev').click(function () {
+            prev();
+        });
+        $('.next').click(function () {
+            next();
+        });
+
+    </script>
 </body>
 </html>
