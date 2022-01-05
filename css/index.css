@@ -175,11 +175,11 @@ header {
 
 #intro {
     width: 100%;
-    height: 750px;
+    height: 850px;
 }
 
 .header_intro {
-    background-image: url(img/starwars_tit.jpg);
+    background-image: url(../img/starwars_tit.jpg);
     width: 100%;
     height: 200px;
     background-attachment: fixed;
@@ -203,7 +203,7 @@ header {
     font-weight: 700;
     font-size: 50px;
     line-height: 1.2;
-    color: black;
+    color: #eee;
     word-spacing: 6px;
 }
 
@@ -211,6 +211,7 @@ header {
     width: 100%;
     height: 500px;
     padding-top: 10px;
+    margin-top: 50px;
 }
 
 .header_row {
@@ -265,7 +266,7 @@ header {
     font-family: Montserrat;
     font-weight: 400;
     font-size: 16px;
-    color: #222222;
+    color: #d61c22;
     letter-spacing: 1px;
 }
 
@@ -624,31 +625,37 @@ header {
     color: #222222;
     text-transform: uppercase;
     letter-spacing: 3px;
+    margin-bottom: 30px;
 }
 
 .eve_btn1 {
     width: 150px;
     height: 50px;
-    background: #eee;
     border-radius: 10px;
     font-family: Montserrat;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.1;
-    color: #ec1d25;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #222222;
+    background-color: #eee;
+    margin-top: 30px;
+}
+
+.eve_btn1 a {
+    color: #222222;
 }
 
 .eve_btn1 a:hover {
-    background: #ec1d25;
     border-radius: 10px;
     font-family: Montserrat;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.1;
-    color: #fff;
+    background-color: #eee;
+    color: #cf2227;;
 }
 
 .wrap_eve_text p {
@@ -828,11 +835,63 @@ header {
 #video {
     width: 100%;
     height: 600px;
-    background-color: coral;
+
+}
+
+.star_game {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+.star_video {
+    width: 50%;
+    height: 100%;
 }
 
 footer {
     width: 100%;
     height: 500px;
-    background-color: black;
+    background-color: #222222;
+    display: flex;
+}
+
+.f_row {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.f_col {
+    padding-top: 50px;
+    color: #eee;
+    font-family: Montserrat,sans-serif;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20pt;    
+}
+
+
+
+.f_txt {
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.f_col img {
+    width: 150px;
+    height: 100px;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 30px;
 }
