@@ -834,16 +834,35 @@ header {
 
 #video {
     width: 100%;
-    height: 600px;
+    height: 900px;
 
+}
+
+.star_game_video {
+    width: 100%;
+    height: 500px;
+}
+
+.game_star {
+    width: 100%;
+    height: 100%;
+}
+
+.play {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 5700px;
+    left: 45%;
 }
 
 .star_game {
     display: flex;
     width: 100%;
-    height: 400px;
+    height: 200px;
     justify-content: center;
     align-items: center;
+    align-items: flex-end;
 }
 
 .star_video {
@@ -858,15 +877,11 @@ footer {
     display: flex;
 }
 
-.f_row {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
 .f_col {
-    padding-top: 50px;
-    color: #eee;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: black;
     font-family: Montserrat,sans-serif;
     font-weight: 400;
     display: flex;
