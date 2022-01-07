@@ -319,8 +319,14 @@
         </div>
         <div class="star_game_video">
         <img src="img/star_game.jpg" class="game_star">
-        <a href="#"><img src="img/play.png" class="play"></a>
+       <img src="img/play.png" class="play">
         </div>
+        <div id="box">
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/rzIGNBsegdM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+            <button id="cbtn"> close</button>
+            
+            </div>
         <div class="star_game">
             
             <div class="f_col">
@@ -366,6 +372,14 @@
             next();
         });
 
+            $(function () {
+                $('.play').click(function () {
+                    $('#box').css('display', 'block');
+                });
+                $('#cbtn').click(function () {
+                    $('#box').css('display', 'none');
+                });
+            });
     </script>
 </body>
 </html>
