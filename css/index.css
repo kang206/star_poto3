@@ -857,14 +857,32 @@ header {
 }
 
 #box{width: 100%;
-     height: 100%;
-       position: absolute;
-       top: 5700px;
-       left: 45%;
+    height: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgba(0,0,0,0.8);
+    display: none;
+}
 
-    margin-top: -100px; margin-left:-100px;
-    
-    display: none;}
+.iframe {
+    width: 900px;
+    height: 500px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#cbtn {
+    width: 100px;
+    height: 50px;
+    position: fixed;
+    top: 80%;
+    left: 47%;
+    color: #333333;
+}
 
 .star_game {
     display: flex;
@@ -882,9 +900,23 @@ header {
 
 footer {
     width: 100%;
-    height: 500px;
-    background-color: #222222;
-    display: flex;
+    height: 126px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+}
+
+#under {
+    width: 100%;
+    height: 100px;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    
+}
+
+.under_text {
+    padding: 30px 30px 30px 30px;
 }
 
 .f_col {
