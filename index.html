@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>STARWARS</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/min1200.css">
+    <link rel="stylesheet" href="css/min600.css">
+    <link rel="stylesheet" href="css/max599.css">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
@@ -54,6 +57,7 @@
             </div>
         </div>
     </header>
+    <section id="swich_body">
     <section id="slide">
         <div class="slide_wrap">
             <img src="img/star_slide.jpg">
@@ -129,12 +133,12 @@
                 <div class="tit_col1">
                     <div class="tit_row">
                         <div class="pic_col1">
-                            <div class="item_pic">
+                            <div class="item_pic1">
                                 <img src="img/starwars_Gpic2.jpg" alt="">
                             </div>
                         </div>
                         <div class="pic_col2">
-                            <div class="item_pic">
+                            <div class="item_pic1">
                                 <img src="img/starwars_Gpic3.jpg" alt="">
                             </div>
                         </div>
@@ -313,12 +317,11 @@
         </div>
     </section>
     <section id="video">
-        <div class="header_intro">
-            <span>Video</span>
-            <h3>스타워즈 제다이:오더의 몰락</h3>
+        <div class="v_tit">
+        <span class="v_tit1">Video</span>
+        <h3 class="v_tit2">스타워즈 제다이:오더의 몰락</h3>
         </div>
         <div class="star_game_video">
-        <img src="img/star_game.jpg" class="game_star">
        <img src="img/play.png" class="play">
         </div>
         <div id="box">
@@ -341,11 +344,21 @@
     </section>
     <footer>
         <div id="under">
-            <span class="under_text">STARWARS <br> Lucasfilm Ltd. </span><br>
-            <span>Copyright © 2007 Kamkol Library. All Rights Reserved.</span>
+            <span class="under_text">STARWARS Lucasfilm Ltd.<br> </span>
+            <span>게임 검색
+                최신 뉴스
+                고객지원
+                회사 소개
+                EA스튜디오
+                <br>
+                법적 고지
+                온라인 서비스 업데이트
+                사용자 계약
+                개인정보 및 쿠키 정책(개인정보 권리)
+                © 2022 Electronic Arts Inc.</span>
         </div>
     </footer>
-
+</section>
     <script>
          var w=window.innerWidth;  
         function prev() {
