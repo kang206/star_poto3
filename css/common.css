@@ -107,7 +107,7 @@
     border-bottom: 2px solid #fff;
     }
     
-    .slidebar {
+    .sidebar {
         position: fixed;
         z-index: 1200;
         width: 390px;
@@ -265,6 +265,10 @@
 
     .social i {
         margin-left: 20px;
+    }
+
+    .sidebar {
+        display: none;
     }
 
     .btn_show {
