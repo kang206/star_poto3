@@ -53,13 +53,22 @@
                         <a href="#"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-facebook"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
-                        <button class="btn_show"><span class="material-icons">
+                        <button class="btn_show">
+                            <span class="material-icons">
                             menu
-                            </span></button>
+                            </span>
+                        </button>
                     </div>
                     
                     <aside class="sidebar">
                         <ul class="menu_slideb">
+                            <li>
+                                <button class="btn_show">
+                                    <span class="material-icons">
+                                    close
+                                    </span>
+                                </button>
+                            </li>
                             <li>
                                 <a href="#">HOME</a>
                             </li>
@@ -390,6 +399,20 @@
     </footer>
 </section>
     <script>
+        $(function () {
+            $(".btn_show").click(function () {
+                $(".sidebar").slideToggle();
+            });
+        });
+
+
+        $(window).resize(function () {
+            if (window.innerWidth <= 599) {
+                $('.sidebar').hide();
+            }
+        });
+
+
          var w=window.innerWidth;  
         function prev() {
             $('.slick_track .item_slide:last').prependTo('.slick_track');
