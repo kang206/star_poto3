@@ -64,7 +64,7 @@
 
     .welcome_col_text {
         display: flex;
-        width: 100%;
+        width: 95%;
         height: 300px;
         flex-direction: column;
         flex-wrap: nowrap;
@@ -230,10 +230,11 @@
     .tit_row {
         display: flex;
         flex-wrap: wrap;
-        width: 100%;
+        width: 95%;
         height: 100%;
         align-content: space-between;
-        justify-content: space-between;
+        justify-content: center;
+        margin-left: 15px;
     }
 
     .tit_row img {
@@ -247,16 +248,16 @@
     }
 
     .pic_col1 {
-        max-width: 45%;
-        flex: 0 0 45%;
+        max-width: 40%;
+        flex: 0 0 40%;
         position: relative;
         width: 100%;
         min-height: 1px;
     }
 
     .pic_col2 {
-        max-width: 45%;
-        flex: 0 0 45%;
+        max-width: 40%;
+        flex: 0 0 40%;
         position: relative;
         width: 100%;
         min-height: 1px;
@@ -478,8 +479,9 @@
         border-radius: 10px;
         overflow: hidden;
         display: flex;
-        width: 100%;
+        width: 94%;
         align-items: stretch;
+        margin-left: 15px;
     }
 
     .ev_tit {
@@ -664,7 +666,8 @@
     .book_col {
         padding-bottom: 30px;
         flex: 0 0 50%;
-        max-width: 50%;
+        max-width: 45%;
+        margin-left: 30px;
     }
 
     .book_col_tag {
@@ -686,7 +689,7 @@
     .b_tit2 {
         font-family: Poppins;
         font-weight: 700;
-        font-size: 50px;
+        font-size: 20pt;
         line-height: 1.2;
         color: #222222;
         text-transform: uppercase;
@@ -846,8 +849,8 @@
     }
 
     .iframe {
-        width: 900px;
-        height: 500px;
+        width: 90%;
+        height: 70%;
         position: fixed;
         top: 50%;
         left: 50%;
@@ -858,7 +861,7 @@
         width: 100px;
         height: 50px;
         position: fixed;
-        top: 80%;
+        top: 90%;
         left: 47%;
         color: #333333;
     }
