@@ -349,7 +349,7 @@
                 </div>
                 <div class="book_col">
                     <div class="wrap_b_pic">
-                        <img src="img/star_game.jpg">
+                        <img src="img/starwars_mail.jpg">
                     </div>
                 </div>
             </div>
@@ -398,55 +398,6 @@
         </div>
     </footer>
 </section>
-    <script>
-        $(function () {
-            $(".btn_show").click(function () {
-                $(".sidebar").slideToggle();
-            });
-        });
-
-
-        $(window).resize(function () {
-            if (window.innerWidth <= 599) {
-                $('.sidebar').hide();
-            }
-        });
-
-
-         var w=window.innerWidth;  
-        function prev() {
-            $('.slick_track .item_slide:last').prependTo('.slick_track');
-            $('.slick_track').css('margin-left', -w);
-            $('.slick_track').stop().animate({ marginLeft: 0 }, 800);
-        }
-        function next() {
-            $('.slick_track').stop().animate({ 'marginLeft': -w }, function () {
-                $('.slick_track .item_slide:first').appendTo('.slick_track');
-                $('.slick_track').css({ marginLeft: 0 }, 800);
-            });
-        }
-        function slide() {
-            $('.slick_track').stop().animate({ marginLeft: -w }, function () {
-                $('.slick_track .item_slide:first').appendTo('.slick_track');
-                $('.slick_track').css({ marginLeft: 0 });
-            });
-        }
-        setInterval(slide, 10000);
-        $('.prev').click(function () {
-            prev();
-        });
-        $('.next').click(function () {
-            next();
-        });
-
-            $(function () {
-                $('.play').click(function () {
-                    $('#box').css('display', 'block');
-                });
-                $('#cbtn').click(function () {
-                    $('#box').css('display', 'none');
-                });
-            });
-    </script>
+<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
