@@ -74,9 +74,10 @@
     .welcome_col_text h3 {
         font-family: Poppins;
         font-weight: 700;
-        font-size: 40px;
+        font-size: 28px;
         line-height: 1.2;
         color: #222222;
+        text-align: center;
     }
 
     .welcome_col_text span {
@@ -172,9 +173,9 @@
     .intro_text h4 {
         font-family: Poppins;
         font-weight: 500;
-        font-size: 20px;
+        font-size: 18px;
         color: #333333;
-        letter-spacing: 3px;
+        letter-spacing: 1px;
         color: #d61c22;
     }
 
@@ -698,7 +699,7 @@
     .b_tit2 {
         font-family: Poppins;
         font-weight: 700;
-        font-size: 50px;
+        font-size: 35px;
         line-height: 1.2;
         color: #222222;
         text-transform: uppercase;
